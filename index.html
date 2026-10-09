@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação em Slides</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-emerald-950 via-teal-900 to-green-950 text-slate-100 flex flex-col items-center justify-center min-h-screen p-4 overflow-hidden">
+
+    <!-- Container Principal do Slide -->
+    <div class="relative w-full max-w-4xl h-[520px] bg-emerald-950/40 backdrop-blur-xl border border-emerald-500/30 rounded-3xl shadow-2xl shadow-emerald-950/50 flex flex-col justify-between p-8 md:p-12 overflow-hidden">
+        
+        <!-- Elemento Decorativo de Fundo -->
+        <div class="absolute -top-24 -right-24 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Área de Conteúdo dos Slides -->
+        <div class="relative z-10 flex-1 flex flex-col justify-center">
+            
+            <!-- Slide 1 -->
+            <div class="slide hidden flex-col space-y-6" data-index="0">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 rounded-full w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-300 uppercase">Slide 01 • Introdução</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight"> Resumo Teórico</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">O fenômeno central observado nos experimentos é o Efeito Tyndall (espalhamento Rayleigh/Mie). Quando um feixe de luz laser passa por um meio cheio de pequenas partículas (como poeira ou fumaça), a luz bate nessas partículas e se espalha para todos os lados. É graças a isso que conseguimos ver o raio de luz se expalhando no recepiente.</p>
+                
+                <!-- Âncora de Vídeo -->
+                <!--<div class="pt-2">
+                    <a href="https://www.youtube.com/watch?v=v2KxlvE6WEs" target="_blank" class="video-link inline-flex items-center gap-3 bg-emerald-600/80 hover:bg-emerald-500 border border-emerald-400/40 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-lg shadow-emerald-900/40 group">
+                        <span class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition">
+                            <svg class="w-3.5 h-3.5 fill-current text-white ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </span>
+                        <span>Assistir ao Vídeo Explicativo</span>
+                    </a>
+                </div> -->
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide hidden flex-col space-y-6" data-index="1">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 rounded-full w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-300 uppercase">Slide 02 •lista dos Experimentos</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">Síntese dos Experimentos</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">Vídeo 1: Interação com materiais: solução, coloide e suspeção.</p>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">Vídeo 2: Diferenciação entre soluções, colóides, e diferenças entre os coloides.</p>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">Vídeo 3: Espalhamento em particulado gasosa (aerossol) revelando a trajetória no ar.</p>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">Vídeo 4: tranformação de gel de cabelo de solução para coloide.</p>
+                <!-- Âncora de Vídeo -->
+                <!--<div class="pt-2">
+                    <a href="https://www.youtube.com/watch?v=SEU_VIDEO_ID" target="_blank" class="video-link inline-flex items-center gap-3 bg-emerald-600/80 hover:bg-emerald-500 border border-emerald-400/40 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-lg shadow-emerald-900/40 group">
+                        <span class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition">
+                            <svg class="w-3.5 h-3.5 fill-current text-white ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </span>
+                        <span>Assistir ao Vídeo Explicativo</span>
+                    </a>
+                </div> -->
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide hidden flex-col space-y-6" data-index="2">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 rounded-full w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-300 uppercase">Slide 03 • Produtividade</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">Luz em: soluçoes, Coloide e suspenção</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed"> Ao atingir os recipientes, a luz sofre múltiplas reflexões/refrações criando um brilho difuso no coloide. diferente das suspeções e das soluçoes. Observe que na solução a luz passa sem sofre refrações e na supeção os particulados sofrem decantação alem de barrar a luz quase que por completo.</p>
+                <!-- Âncora de Vídeo -->
+                <div class="pt-2">
+                    <a href="https://www.youtube.com/watch?v=v2KxlvE6WEs" target="_blank" class="video-link inline-flex items-center gap-3 bg-emerald-600/80 hover:bg-emerald-500 border border-emerald-400/40 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-lg shadow-emerald-900/40 group">
+                        <span class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition">
+                            <svg class="w-3.5 h-3.5 fill-current text-white ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </span>
+                        <span>Assistir ao Vídeo Explicativo</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide hidden flex-col space-y-6" data-index="3">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 rounded-full w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-300 uppercase">Slide 04 • Experiência</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">Efeito Tyndall em Soluções vs. Colóides</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">Na solução pura a luz passa sem feixe lateral visível. Na esponja no isopor e no leite , a luz se espalha no material e atenuam a transmissão direta. Comparativo de refração e dispersão em diferentes materiais, perseba que dependendo de como o coloide e costituido a refração e diferente.</p>
+                
+                <!-- Âncora de Vídeo -->
+                <div class="pt-2">
+                    <a href="https://www.youtube.com/watch?v=b9kn34C7Rfk" target="_blank" class="video-link inline-flex items-center gap-3 bg-emerald-600/80 hover:bg-emerald-500 border border-emerald-400/40 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-lg shadow-emerald-900/40 group">
+                        <span class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition">
+                            <svg class="w-3.5 h-3.5 fill-current text-white ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </span>
+                        <span>Assistir ao Vídeo Explicativo</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide hidden flex-col space-y-6" data-index="4">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 rounded-full w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-300 uppercase">Slide 05 • Tecnologias</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">Visibilidade do Trajeto Laser por Aerossol</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">No ar limpo o feixe reto é invisível lateralmente. Ao borrifar o spray, as microgotículas em suspensão atuam como centros espalhadores, tornando a linha de luz visível.</p>
+                
+                <!-- Âncora de Vídeo -->
+                <div class="pt-2">
+                    <a href="https://www.youtube.com/watch?v=HlbCwoUGJJs" target="_blank" class="video-link inline-flex items-center gap-3 bg-emerald-600/80 hover:bg-emerald-500 border border-emerald-400/40 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-lg shadow-emerald-900/40 group">
+                        <span class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition">
+                            <svg class="w-3.5 h-3.5 fill-current text-white ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </span>
+                        <span>Assistir ao Vídeo Explicativo</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide hidden flex-col space-y-6" data-index="5">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 rounded-full w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-300 uppercase">Slide 06 • Segurança</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">transformação de solução em coloide</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">Implementando padrões rigorosos de conformidade e criptografia para garantir a integridade das informações.</p>
+                
+                <!-- Âncora de Vídeo -->
+                <div class="pt-2">
+                    <a href="https://www.youtube.com/watch?v=GXhSROut51w" target="_blank" class="video-link inline-flex items-center gap-3 bg-emerald-600/80 hover:bg-emerald-500 border border-emerald-400/40 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-lg shadow-emerald-900/40 group">
+                        <span class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition">
+                            <svg class="w-3.5 h-3.5 fill-current text-white ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </span>
+                        <span>Assistir ao Vídeo Explicativo</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="slide hidden flex-col space-y-6" data-index="6">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 rounded-full w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-300 uppercase">Slide 07 • Escalabilidade</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">discussões e conclusão</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">O fenômeno observado é o Efeito Tyndall. Que nos experimentos demonstraram que há diversas formas de coloides e que eles podem ser formados por reações quimicas com adição de reagentes em soluçoes. As suspensões apresentaram maior retenção do feixe de luz, evidenciando partículas maiores que as dos coloides e soluções.A literatura confirma essa relação pelo tamanho médio das partículas: soluções 1 nanometro ou menos, coloides entre 1 e 1000 nanometros e suspensões variando geralmente entre 1 e 100 micrometros .</p>
+                
+                
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="slide hidden flex-col space-y-6" data-index="7">
+                <div class="inline-flex items-center space-x-2 bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 rounded-full w-fit">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-semibold tracking-wider text-emerald-300 uppercase">Slide 08 • Conclusão</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">referencias</h1>
+                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">Efeito Tyndall. Mundo Educação. [S.l.: S.n.]. Disponível em: mundoeducacao.uol.com.br/efeito-tyndall. Acesso em: 10 ago 2026.
+
+Coloides ou Dispersões Coloidais.. Mundo Educação. [S.l.: S.n.]. Disponível em:mundoeducacao.uol.com.br/coloides-ou-dispersoes-coloidais. Acesso em: 10 ago 2026.
+
+Definições de misturas - suspensão, coloide e soluções em Química Descomplica. [S.l.: S.n.]. Disponível em:descomplica.com.br/definicoes-de-misturas-suspensao-coloide-e-solucoes. Acesso em: 10 ago 2026.</p>
+                
+                
+            </div>
+
+        </div>
+
+        <!-- Rodapé do Slide: Navegação e Controles -->
+        <div class="relative z-10 flex items-center justify-between pt-6 border-t border-emerald-500/20 mt-4">
+            
+            <!-- Indicadores (Bolinhas) -->
+            <div id="indicators" class="flex space-x-2 overflow-x-auto max-w-[200px] md:max-w-none py-1">
+                <!-- Gerado via JavaScript -->
+            </div>
+
+            <!-- Botões Anterior / Próximo -->
+            <div class="flex items-center space-x-3">
+                <button id="prevBtn" class="p-3 rounded-xl bg-emerald-900/50 border border-emerald-500/30 hover:bg-emerald-800/60 text-emerald-300 transition shadow-md active:scale-95 cursor-pointer">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="nextBtn" class="p-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white transition shadow-lg shadow-emerald-900/40 active:scale-95 cursor-pointer">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Instruções rápidas de teclado -->
+    <p class="text-xs text-emerald-400/60 mt-4 font-medium tracking-wide">Use as setas ⬅️ ➡️ do teclado para navegar</p>
+
+    <!-- Arquivo JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
